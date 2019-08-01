@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">575248170814-fdjnvni75lvjvvt4cenfjhigfp0802o3.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://travel-mantic-9a24f.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">575248170814</string>
+    <string name="google_api_key" translatable="false">AIzaSyDqJWg7Ud76dNZGPou98EBwzHo8No4l1fE</string>
+    <string name="google_app_id" translatable="false">1:575248170814:android:9d2ac27be025cd4e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDqJWg7Ud76dNZGPou98EBwzHo8No4l1fE</string>
+    <string name="google_storage_bucket" translatable="false">travel-mantic-9a24f.appspot.com</string>
+    <string name="project_id" translatable="false">travel-mantic-9a24f</string>
+</resources>
