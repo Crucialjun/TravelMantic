@@ -34,104 +34,103 @@
 22-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:9:9-54
 23        android:supportsRtl="true"
 23-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:10:9-35
-24        android:testOnly="true"
-25        android:theme="@style/AppTheme" >
-25-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:11:9-40
-26        <activity android:name="com.crucial.travelmantic.AdminActivity" >
-26-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:12:9-18:20
-26-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:12:19-48
-27            <intent-filter>
-27-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:13:13-17:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:17-69
-28-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:17-77
-30-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:27-74
-31            </intent-filter>
-32        </activity>
-33        <activity android:name="com.crucial.travelmantic.UserActivity" >
-33-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:19:9-25:20
-33-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:19:19-47
-34            <intent-filter>
-34-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:13:13-17:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:17-69
-35-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:17-77
-37-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:27-74
-38            </intent-filter>
-39        </activity>
-40        <activity
-40-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:24:9-31:50
-41            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-41-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:25:13-85
-42            android:excludeFromRecents="true"
-42-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:26:13-46
-43            android:exported="true"
-43-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:27:13-36
-44            android:launchMode="singleTask"
-44-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:28:13-44
-45            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-45-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:29:13-102
-46            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-46-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:30:13-72
-47
-48        <service
-48-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:33:9-39:19
-49            android:name="com.google.firebase.components.ComponentDiscoveryService"
-49-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:34:13-84
-50            android:exported="false" >
-50-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:35:13-37
-51            <meta-data
-51-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:36:13-38:85
-52                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-52-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:37:17-109
-53                android:value="com.google.firebase.components.ComponentRegistrar" />
-53-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:38:17-82
-54            <meta-data
-54-->[com.google.firebase:firebase-database:18.0.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/94c34f45c016963b3d29eb14daacd547/firebase-database-18.0.1/AndroidManifest.xml:32:13-34:85
-55                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-55-->[com.google.firebase:firebase-database:18.0.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/94c34f45c016963b3d29eb14daacd547/firebase-database-18.0.1/AndroidManifest.xml:33:17-109
-56                android:value="com.google.firebase.components.ComponentRegistrar" />
-56-->[com.google.firebase:firebase-database:18.0.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/94c34f45c016963b3d29eb14daacd547/firebase-database-18.0.1/AndroidManifest.xml:34:17-82
-57            <meta-data
-57-->[com.google.firebase:firebase-storage:18.1.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/417074be7b36aaa38b2f35ff714a52bf/firebase-storage-18.1.1/AndroidManifest.xml:33:13-35:85
-58                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-58-->[com.google.firebase:firebase-storage:18.1.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/417074be7b36aaa38b2f35ff714a52bf/firebase-storage-18.1.1/AndroidManifest.xml:34:17-107
-59                android:value="com.google.firebase.components.ComponentRegistrar" />
-59-->[com.google.firebase:firebase-storage:18.1.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/417074be7b36aaa38b2f35ff714a52bf/firebase-storage-18.1.1/AndroidManifest.xml:35:17-82
-60        </service>
-61
-62        <activity
-62-->[com.google.android.gms:play-services-base:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/e3e82cd8e9452c935ff6733dc2e3b173/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-63            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-63-->[com.google.android.gms:play-services-base:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/e3e82cd8e9452c935ff6733dc2e3b173/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-64            android:exported="false"
-64-->[com.google.android.gms:play-services-base:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/e3e82cd8e9452c935ff6733dc2e3b173/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-65            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-65-->[com.google.android.gms:play-services-base:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/e3e82cd8e9452c935ff6733dc2e3b173/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-66
-67        <provider
-67-->[com.google.firebase:firebase-common:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae890be8536e25a1f71544ea086f8800/firebase-common-18.0.0/AndroidManifest.xml:12:9-16:39
-68            android:name="com.google.firebase.provider.FirebaseInitProvider"
-68-->[com.google.firebase:firebase-common:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae890be8536e25a1f71544ea086f8800/firebase-common-18.0.0/AndroidManifest.xml:13:13-77
-69            android:authorities="com.crucial.travelmantic.firebaseinitprovider"
-69-->[com.google.firebase:firebase-common:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae890be8536e25a1f71544ea086f8800/firebase-common-18.0.0/AndroidManifest.xml:14:13-72
-70            android:exported="false"
-70-->[com.google.firebase:firebase-common:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae890be8536e25a1f71544ea086f8800/firebase-common-18.0.0/AndroidManifest.xml:15:13-37
-71            android:initOrder="100" />
-71-->[com.google.firebase:firebase-common:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae890be8536e25a1f71544ea086f8800/firebase-common-18.0.0/AndroidManifest.xml:16:13-36
-72
-73        <meta-data
-73-->[com.google.android.gms:play-services-basement:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/693c48938937afb9b926e16a3a3df350/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-74            android:name="com.google.android.gms.version"
-74-->[com.google.android.gms:play-services-basement:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/693c48938937afb9b926e16a3a3df350/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-75            android:value="@integer/google_play_services_version" />
-75-->[com.google.android.gms:play-services-basement:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/693c48938937afb9b926e16a3a3df350/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-76    </application>
-77
-78</manifest>
+24        android:theme="@style/AppTheme" >
+24-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:11:9-40
+25        <activity android:name="com.crucial.travelmantic.AdminActivity" >
+25-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:12:9-18:20
+25-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:12:19-48
+26            <intent-filter>
+26-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:13:13-17:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:17-69
+27-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:17-77
+29-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity android:name="com.crucial.travelmantic.UserActivity" >
+32-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:19:9-25:20
+32-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:19:19-47
+33            <intent-filter>
+33-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:13:13-17:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:17-69
+34-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:17-77
+36-->/home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:24:9-31:50
+40            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+40-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:25:13-85
+41            android:excludeFromRecents="true"
+41-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:26:13-46
+42            android:exported="true"
+42-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:27:13-36
+43            android:launchMode="singleTask"
+43-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:28:13-44
+44            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+44-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:29:13-102
+45            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+45-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:30:13-72
+46
+47        <service
+47-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:33:9-39:19
+48            android:name="com.google.firebase.components.ComponentDiscoveryService"
+48-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:34:13-84
+49            android:exported="false" >
+49-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:35:13-37
+50            <meta-data
+50-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:36:13-38:85
+51                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+51-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:37:17-109
+52                android:value="com.google.firebase.components.ComponentRegistrar" />
+52-->[com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/aa74ce7ccfc9f9ac05a985b891c28cae/firebase-auth-18.1.0/AndroidManifest.xml:38:17-82
+53            <meta-data
+53-->[com.google.firebase:firebase-database:18.0.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/94c34f45c016963b3d29eb14daacd547/firebase-database-18.0.1/AndroidManifest.xml:32:13-34:85
+54                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+54-->[com.google.firebase:firebase-database:18.0.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/94c34f45c016963b3d29eb14daacd547/firebase-database-18.0.1/AndroidManifest.xml:33:17-109
+55                android:value="com.google.firebase.components.ComponentRegistrar" />
+55-->[com.google.firebase:firebase-database:18.0.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/94c34f45c016963b3d29eb14daacd547/firebase-database-18.0.1/AndroidManifest.xml:34:17-82
+56            <meta-data
+56-->[com.google.firebase:firebase-storage:18.1.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/417074be7b36aaa38b2f35ff714a52bf/firebase-storage-18.1.1/AndroidManifest.xml:33:13-35:85
+57                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+57-->[com.google.firebase:firebase-storage:18.1.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/417074be7b36aaa38b2f35ff714a52bf/firebase-storage-18.1.1/AndroidManifest.xml:34:17-107
+58                android:value="com.google.firebase.components.ComponentRegistrar" />
+58-->[com.google.firebase:firebase-storage:18.1.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/417074be7b36aaa38b2f35ff714a52bf/firebase-storage-18.1.1/AndroidManifest.xml:35:17-82
+59        </service>
+60
+61        <activity
+61-->[com.google.android.gms:play-services-base:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/e3e82cd8e9452c935ff6733dc2e3b173/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+62            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+62-->[com.google.android.gms:play-services-base:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/e3e82cd8e9452c935ff6733dc2e3b173/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+63            android:exported="false"
+63-->[com.google.android.gms:play-services-base:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/e3e82cd8e9452c935ff6733dc2e3b173/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+64            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+64-->[com.google.android.gms:play-services-base:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/e3e82cd8e9452c935ff6733dc2e3b173/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+65
+66        <provider
+66-->[com.google.firebase:firebase-common:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae890be8536e25a1f71544ea086f8800/firebase-common-18.0.0/AndroidManifest.xml:12:9-16:39
+67            android:name="com.google.firebase.provider.FirebaseInitProvider"
+67-->[com.google.firebase:firebase-common:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae890be8536e25a1f71544ea086f8800/firebase-common-18.0.0/AndroidManifest.xml:13:13-77
+68            android:authorities="com.crucial.travelmantic.firebaseinitprovider"
+68-->[com.google.firebase:firebase-common:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae890be8536e25a1f71544ea086f8800/firebase-common-18.0.0/AndroidManifest.xml:14:13-72
+69            android:exported="false"
+69-->[com.google.firebase:firebase-common:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae890be8536e25a1f71544ea086f8800/firebase-common-18.0.0/AndroidManifest.xml:15:13-37
+70            android:initOrder="100" />
+70-->[com.google.firebase:firebase-common:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae890be8536e25a1f71544ea086f8800/firebase-common-18.0.0/AndroidManifest.xml:16:13-36
+71
+72        <meta-data
+72-->[com.google.android.gms:play-services-basement:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/693c48938937afb9b926e16a3a3df350/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+73            android:name="com.google.android.gms.version"
+73-->[com.google.android.gms:play-services-basement:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/693c48938937afb9b926e16a3a3df350/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+74            android:value="@integer/google_play_services_version" />
+74-->[com.google.android.gms:play-services-basement:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/693c48938937afb9b926e16a3a3df350/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+75    </application>
+76
+77</manifest>

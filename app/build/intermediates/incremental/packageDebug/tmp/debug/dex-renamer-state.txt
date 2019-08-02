@@ -1,4 +1,4 @@
-#Thu Aug 01 07:20:08 EAT 2019
-base.0=C\:\\Users\\Nicholas\\TravelMantic\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+#Fri Aug 02 09:31:09 EAT 2019
+base.0=/home/crucialjun/AndroidStudioProjects/TravelMantic/app/build/intermediates/dex/debug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
