@@ -12,6 +12,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class AdminActivity extends AppCompatActivity {
 
     private TextView mTxtViewTitle;
@@ -26,6 +29,11 @@ public class AdminActivity extends AppCompatActivity {
     private CardView mCardViewDealDescription;
     private Button mBtnSelectImage;
     private ImageView mImgDealImage;
+
+    private FirebaseDatabase mFirebaseDatabase;
+    private DatabaseReference mDatabaseReference;
+
+    TravelDeal deal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +53,13 @@ public class AdminActivity extends AppCompatActivity {
         mCardViewDealDescription = findViewById(R.id.card_view_deal_description);
         mBtnSelectImage = findViewById(R.id.btn_select_image);
         mImgDealImage = findViewById(R.id.img_deal_image);
+
+        mFirebaseDatabase = FirebaseUtility.mFirebaseDatabase;
+        mDatabaseReference = FirebaseUtility.mDatabaseReference;
+
+
+
+
 
     }
 
