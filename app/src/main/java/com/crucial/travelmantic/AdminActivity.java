@@ -57,7 +57,7 @@ public class AdminActivity extends AppCompatActivity {
         mFirebaseDatabase = FirebaseUtility.mFirebaseDatabase;
         mDatabaseReference = FirebaseUtility.mDatabaseReference;
 
-
+        
 
 
 
@@ -70,5 +70,17 @@ public class AdminActivity extends AppCompatActivity {
         MenuItem menuItem = menu.findItem(R.id.menu_save_deal);
 
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.menu_save_deal:
+                saveDeal();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void saveDeal() {
     }
 }
