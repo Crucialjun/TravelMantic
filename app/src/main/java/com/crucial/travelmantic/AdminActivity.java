@@ -54,8 +54,7 @@ public class AdminActivity extends AppCompatActivity {
         mBtnSelectImage = findViewById(R.id.btn_select_image);
         mImgDealImage = findViewById(R.id.img_deal_image);
 
-        mFirebaseDatabase = FirebaseUtility.mFirebaseDatabase;
-        mDatabaseReference = FirebaseUtility.mDatabaseReference;
+        deal = new TravelDeal();
 
         
 
@@ -82,5 +81,22 @@ public class AdminActivity extends AppCompatActivity {
     }
 
     private void saveDeal() {
+        deal.setTitle(mEdtDealName.getText().toString());
+        deal.setDescription(mEdtDealDescription.getText().toString());
+        deal.setPrice(mEdtDealPrice.getText().toString());
+        clearEntries();
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("Travel Deals");
+        myRef.setValue(deal);
+
+
+    }
+
+    private void clearEntries() {
+        mEdtDealName.setText("");
+        mEdtDealDescription.setText("");
+        mEdtDealPrice.setText("");
+        mEdtDealName.requestFocus();
     }
 }
