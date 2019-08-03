@@ -10,6 +10,7 @@ MERGED from [com.google.firebase:firebase-auth:18.1.0] /home/crucialjun/.gradle/
 MERGED from [com.google.firebase:firebase-database:18.0.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/94c34f45c016963b3d29eb14daacd547/firebase-database-18.0.1/AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/417074be7b36aaa38b2f35ff714a52bf/firebase-storage-18.1.1/AndroidManifest.xml:15:1-39:12
 MERGED from [androidx.cardview:cardview:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/27f0b923a349ffc60da9745bb2ebeeb8/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/65ca8079e3d908666302a1d51fd21207/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/2b169e76464b648232e62780e8c68c42/firebase-auth-interop-18.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/e3e82cd8e9452c935ff6733dc2e3b173/play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.firebase:firebase-common:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae890be8536e25a1f71544ea086f8800/firebase-common-18.0.0/AndroidManifest.xml:2:1-19:12
@@ -36,10 +37,10 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/crucialjun/.gradl
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/f0d54032af6ada6fe49d173f28e56dfe/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/0e21230dc7f7fe6c94b88b385f8911b9/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae8f40f9f0088181d09dddb96318fc3d/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/b4d3813eb63c7ec97965f90d4b58094a/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ddf2ee399be40c574a17df2895303653/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/14fe1d7bbe7388726c203012bc0746db/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/a64a07e1ae4b5cc18e13bd74c50a0700/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/b4d3813eb63c7ec97965f90d4b58094a/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ce06dd61249fd332f287953c024af558/firebase-database-collection-17.0.0/AndroidManifest.xml:2:1-7:12
 INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-28:12
 INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-28:12
@@ -130,6 +131,8 @@ MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/crucialjun/.grad
 MERGED from [com.google.firebase:firebase-storage:18.1.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/417074be7b36aaa38b2f35ff714a52bf/firebase-storage-18.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/27f0b923a349ffc60da9745bb2ebeeb8/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/27f0b923a349ffc60da9745bb2ebeeb8/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/65ca8079e3d908666302a1d51fd21207/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/65ca8079e3d908666302a1d51fd21207/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/2b169e76464b648232e62780e8c68c42/firebase-auth-interop-18.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/2b169e76464b648232e62780e8c68c42/firebase-auth-interop-18.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/e3e82cd8e9452c935ff6733dc2e3b173/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
@@ -182,14 +185,14 @@ MERGED from [androidx.print:print:1.0.0] /home/crucialjun/.gradle/caches/transfo
 MERGED from [androidx.print:print:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/0e21230dc7f7fe6c94b88b385f8911b9/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae8f40f9f0088181d09dddb96318fc3d/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ae8f40f9f0088181d09dddb96318fc3d/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/b4d3813eb63c7ec97965f90d4b58094a/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/b4d3813eb63c7ec97965f90d4b58094a/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ddf2ee399be40c574a17df2895303653/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ddf2ee399be40c574a17df2895303653/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/14fe1d7bbe7388726c203012bc0746db/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/14fe1d7bbe7388726c203012bc0746db/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/a64a07e1ae4b5cc18e13bd74c50a0700/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/a64a07e1ae4b5cc18e13bd74c50a0700/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/b4d3813eb63c7ec97965f90d4b58094a/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/b4d3813eb63c7ec97965f90d4b58094a/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ce06dd61249fd332f287953c024af558/firebase-database-collection-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ce06dd61249fd332f287953c024af558/firebase-database-collection-17.0.0/AndroidManifest.xml:5:5-44
 INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml
