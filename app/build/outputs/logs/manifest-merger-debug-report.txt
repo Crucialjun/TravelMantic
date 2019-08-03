@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-29:12
 MERGED from [androidx.multidex:multidex:2.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/2aae607a5f0d3782723ddad54383c284/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.firebaseui:firebase-ui:4.3.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/27f3e4979ffc18c5be53a99a30dcf15d/firebase-ui-4.3.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/3802f058932081f86b450672e1cdf705/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:2:1-109:12
@@ -67,25 +67,25 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/crucialjun/.gradle/cac
 MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/53213c8d9733fc980ca2f56c23a937d2/jetified-gifdecoder-4.8.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/ce06dd61249fd332f287953c024af558/firebase-database-collection-17.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/4bac7cead09d410e94a4f1373aad1652/protolite-well-known-types-16.0.1/AndroidManifest.xml:2:1-11:12
-INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml
 		INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml
-		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-23:12
+		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-29:12
 		INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml
-		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-23:12
+		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:1-29:12
 		INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:5:5-21:19
+ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:5:5-27:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/3802f058932081f86b450672e1cdf705/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:15:5-107:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/3802f058932081f86b450672e1cdf705/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:15:5-107:19
 MERGED from [com.google.android.material:material:1.0.0] /home/crucialjun/.gradle/caches/transforms-2/files-2.1/053075d24b26c7d53003184578590a89/material-1.0.0/AndroidManifest.xml:22:5-20
@@ -140,24 +140,28 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/crucialjun/.gradl
 		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:11:9-40
-activity#com.crucial.travelmantic.AdminActivity
-ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:12:9-13:20
+activity#com.crucial.travelmantic.StartActivity
+ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
 		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:12:19-48
-activity#com.crucial.travelmantic.UserActivity
-ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:9-20:20
-	android:name
-		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.crucial.travelmantic.AdminActivity
+ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:19:9-60
+	android:name
+		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:19:19-48
+activity#com.crucial.travelmantic.UserActivity
+ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:20:9-26:20
+	android:name
+		ADDED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml:20:19-47
 uses-sdk
 INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/crucialjun/AndroidStudioProjects/TravelMantic/app/src/main/AndroidManifest.xml

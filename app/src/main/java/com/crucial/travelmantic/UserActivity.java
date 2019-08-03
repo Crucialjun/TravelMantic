@@ -35,6 +35,8 @@ public class UserActivity extends AppCompatActivity {
     private RecyclerView mRecycDeals;
     private FirebaseAuth mAuth;
     List<AuthUI.IdpConfig> providers;
+    public static boolean isAdmin;
+
 
 
 
@@ -129,4 +131,6 @@ public class UserActivity extends AppCompatActivity {
             }
         }
     }
+
+
 }
