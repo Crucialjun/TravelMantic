@@ -1,5 +1,7 @@
 package com.crucial.travelmantic;
 
+import android.content.res.Resources;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +17,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +30,7 @@ public class TravelDealAdapter extends RecyclerView.Adapter<TravelDealAdapter.De
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Travel Deals");
         mTravelDeals = new ArrayList<TravelDeal>();
-        myRef.addChildEventListener(new ChildEventListener() {
+        ChildEventListener childEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 TravelDeal travelDeal = dataSnapshot.getValue(TravelDeal.class);
@@ -56,7 +59,8 @@ public class TravelDealAdapter extends RecyclerView.Adapter<TravelDealAdapter.De
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
-        });
+        };
+        myRef.addChildEventListener(childEventListener);
     }
 
     @NonNull
@@ -77,7 +81,7 @@ public class TravelDealAdapter extends RecyclerView.Adapter<TravelDealAdapter.De
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mTravelDeals.size();
     }
 
     public class DealViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -104,7 +108,17 @@ public class TravelDealAdapter extends RecyclerView.Adapter<TravelDealAdapter.De
             mDealTitle.setText(travelDeal.getTitle());
             mDealDescription.setText(travelDeal.getDescription());
             mDealPrice.setText(travelDeal.getPrice());
+            showImage(travelDeal.getImageUrl());
 
         }
+
+        private void showImage(String url) {
+            if(url != null && !url.isEmpty()) {
+                int width = Resources.getSystem().getDisplayMetrics().widthPixels;
+                Picasso.get().load(Uri.parse(url)).resize(160,160).centerCrop().into(mImageView);
+            }
+        }
     }
+
+
 }
