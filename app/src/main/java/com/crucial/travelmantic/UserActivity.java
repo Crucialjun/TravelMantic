@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.database.DatabaseReference;
@@ -24,6 +25,20 @@ public class UserActivity extends AppCompatActivity {
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Travel Deals");
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("Travel Deals");
+        TravelDealAdapter adapter = new TravelDealAdapter();
+        mRecycDeals.setAdapter(adapter);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this,
+                LinearLayoutManager.VERTICAL,
+                false);
+        mRecycDeals.setLayoutManager(layoutManager);
 
 
     }
