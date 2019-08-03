@@ -8,10 +8,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -30,8 +32,6 @@ public class AdminActivity extends AppCompatActivity {
     private Button mBtnSelectImage;
     private ImageView mImgDealImage;
 
-    private FirebaseDatabase mFirebaseDatabase;
-    private DatabaseReference mDatabaseReference;
 
     TravelDeal deal;
 
@@ -54,8 +54,7 @@ public class AdminActivity extends AppCompatActivity {
         mBtnSelectImage = findViewById(R.id.btn_select_image);
         mImgDealImage = findViewById(R.id.img_deal_image);
 
-        mFirebaseDatabase = FirebaseUtility.mFirebaseDatabase;
-        mDatabaseReference = FirebaseUtility.mDatabaseReference;
+        deal = new TravelDeal();
 
         
 
@@ -82,5 +81,29 @@ public class AdminActivity extends AppCompatActivity {
     }
 
     private void saveDeal() {
+        deal.setTitle(mEdtDealName.getText().toString());
+        deal.setDescription(mEdtDealDescription.getText().toString());
+        deal.setPrice(mEdtDealPrice.getText().toString());
+        clearEntries();
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("Travel Deals");
+        myRef.setValue(deal).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(AdminActivity.this, "Travel Deal Successfully Saved",
+                        Toast.LENGTH_SHORT)
+                        .show();
+            }
+        });
+
+
+    }
+
+    private void clearEntries() {
+        mEdtDealName.setText("");
+        mEdtDealDescription.setText("");
+        mEdtDealPrice.setText("");
+        mEdtDealName.requestFocus();
     }
 }

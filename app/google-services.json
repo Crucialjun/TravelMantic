@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "575248170814-3se8tntlupi1acovvdphrhglro8adugt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crucial.travelmantic",
+            "certificate_hash": "1e5e11b433a0597b535b57768d6ca997012068ef"
+          }
+        },
+        {
           "client_id": "575248170814-hbud7u9591r3art5l162to33d2un8r8q.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
