@@ -24,6 +24,7 @@ import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -47,16 +48,29 @@ public class AdminActivity extends AppCompatActivity {
     private CardView mCardViewDealDescription;
     private Button mBtnSelectImage;
     private ImageView mImgDealImage;
+    public static boolean isAdmin;
+
 
 
     TravelDeal deal;
     private FirebaseDatabase mDatabase;
     private DatabaseReference mMyRef;
+    private FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
+
+        Intent intent = getIntent();
+        TravelDeal deal = (TravelDeal) intent.getSerializableExtra("Deal");
+
+        if(deal == null){
+            deal = new TravelDeal();
+        }
+
+        this.deal = deal;
 
 
         mTxtViewTitle = findViewById(R.id.txt_view_title);
@@ -73,6 +87,7 @@ public class AdminActivity extends AppCompatActivity {
         mImgDealImage = findViewById(R.id.img_deal_image);
 
         deal = new TravelDeal();
+
 
         mBtnSelectImage.setOnClickListener(new View.OnClickListener() {
             @Override

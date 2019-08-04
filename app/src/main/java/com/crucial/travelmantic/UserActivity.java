@@ -21,6 +21,9 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -38,6 +41,7 @@ public class UserActivity extends AppCompatActivity {
     List<AuthUI.IdpConfig> providers;
     public static boolean isAdmin;
     private FirebaseUser mUser;
+    private FirebaseDatabase mDatabase;
 
 
     @Override
@@ -49,8 +53,8 @@ public class UserActivity extends AppCompatActivity {
         mRecycDeals = findViewById(R.id.recyc_deals);
 
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Travel Deals");
+        mDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = mDatabase.getReference("Travel Deals");
         mAuth = FirebaseAuth.getInstance();
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -63,6 +67,9 @@ public class UserActivity extends AppCompatActivity {
                     );
 
                     showSignInOptions();
+                }else{
+                    String userId = firebaseAuth.getUid();
+                    checkAdmin(userId);
                 }
 
             }
@@ -73,6 +80,39 @@ public class UserActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private void checkAdmin(String userId) {
+        isAdmin = false;
+        DatabaseReference ref = mDatabase.getReference().child("Admins").child(userId);
+
+        ChildEventListener listener = new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                isAdmin = true;
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        };
+        ref.addChildEventListener(listener);
     }
 
     private void showSignInOptions() {
@@ -115,6 +155,7 @@ public class UserActivity extends AppCompatActivity {
             case R.id.add_new_deal:
                 Intent intent = new Intent(this,AdminActivity.class);
                 startActivity(intent);
+                break;
             case R.id.logout:
                 AuthUI.getInstance().signOut(UserActivity.this).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
@@ -127,6 +168,7 @@ public class UserActivity extends AppCompatActivity {
                         Toast.makeText(UserActivity.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

@@ -1,7 +1,9 @@
 package com.crucial.travelmantic;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -24,12 +27,19 @@ import java.util.List;
 
 public class TravelDealAdapter extends RecyclerView.Adapter<TravelDealAdapter.DealViewHolder> {
 
+    private final FirebaseDatabase mDatabase;
+    private final DatabaseReference mMyRef;
     private List<TravelDeal> mTravelDeals;
+    private FirebaseAuth mAuth;
+    private boolean mIsAdmin;
+
 
     public TravelDealAdapter() {
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Travel Deals");
+        mDatabase = FirebaseDatabase.getInstance();
+        mMyRef = mDatabase.getReference("Travel Deals");
         mTravelDeals = new ArrayList<TravelDeal>();
+
+
         ChildEventListener childEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
@@ -60,7 +70,7 @@ public class TravelDealAdapter extends RecyclerView.Adapter<TravelDealAdapter.De
 
             }
         };
-        myRef.addChildEventListener(childEventListener);
+        mMyRef.addChildEventListener(childEventListener);
     }
 
     @NonNull
@@ -68,7 +78,7 @@ public class TravelDealAdapter extends RecyclerView.Adapter<TravelDealAdapter.De
     public TravelDealAdapter.DealViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View dealView = LayoutInflater
                 .from(parent.getContext())
-                .inflate(R.layout.deal_layout,parent,false);
+                .inflate(R.layout.deal_layout, parent, false);
 
         return new DealViewHolder(dealView);
     }
@@ -84,11 +94,45 @@ public class TravelDealAdapter extends RecyclerView.Adapter<TravelDealAdapter.De
         return mTravelDeals.size();
     }
 
+    private void checkAdmin(String userId) {
+        mIsAdmin = false;
+        DatabaseReference ref = mDatabase.getReference().child("Admins").child(userId);
+
+        ChildEventListener listener = new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                mIsAdmin = true;
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        };
+        ref.addChildEventListener(listener);
+    }
+
     public class DealViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public ImageView mImageView;
         public TextView mDealTitle;
         public TextView mDealDescription;
         public TextView mDealPrice;
+
         public DealViewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -101,6 +145,12 @@ public class TravelDealAdapter extends RecyclerView.Adapter<TravelDealAdapter.De
 
         @Override
         public void onClick(View v) {
+            int position = getAdapterPosition();
+
+            TravelDeal selected = mTravelDeals.get(position);
+            Intent intent = new Intent(v.getContext(), AdminActivity.class);
+            intent.putExtra("Deal", selected);
+            v.getContext().startActivity(intent);
 
         }
 
@@ -113,9 +163,9 @@ public class TravelDealAdapter extends RecyclerView.Adapter<TravelDealAdapter.De
         }
 
         private void showImage(String url) {
-            if(url != null && !url.isEmpty()) {
+            if (url != null && !url.isEmpty()) {
                 int width = Resources.getSystem().getDisplayMetrics().widthPixels;
-                Picasso.get().load(Uri.parse(url)).resize(160,160).centerCrop().into(mImageView);
+                Picasso.get().load(Uri.parse(url)).resize(160, 160).centerCrop().into(mImageView);
             }
         }
     }
