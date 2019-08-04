@@ -34,10 +34,10 @@ public class UserActivity extends AppCompatActivity {
     private TextView mTxtDealsHeader;
     private RecyclerView mRecycDeals;
     private FirebaseAuth mAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
     List<AuthUI.IdpConfig> providers;
     public static boolean isAdmin;
-
-
+    private FirebaseUser mUser;
 
 
     @Override
@@ -48,18 +48,29 @@ public class UserActivity extends AppCompatActivity {
         mTxtDealsHeader = findViewById(R.id.txt_deals_header);
         mRecycDeals = findViewById(R.id.recyc_deals);
 
+
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Travel Deals");
         mAuth = FirebaseAuth.getInstance();
-        
-        providers = Arrays.asList(
-                new AuthUI.IdpConfig.EmailBuilder().build(),
-                new AuthUI.IdpConfig.GoogleBuilder().build()
-                
-        );
-        
-        showSignInOptions();
-                
+        mAuthStateListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                if(firebaseAuth.getCurrentUser() == null){
+                    providers = Arrays.asList(
+                            new AuthUI.IdpConfig.EmailBuilder().build(),
+                            new AuthUI.IdpConfig.GoogleBuilder().build()
+
+                    );
+
+                    showSignInOptions();
+                }
+
+            }
+        };
+
+
+
+
 
 
     }
@@ -76,6 +87,7 @@ public class UserActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        attachListener();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Travel Deals");
         TravelDealAdapter adapter = new TravelDealAdapter();
@@ -125,11 +137,26 @@ public class UserActivity extends AppCompatActivity {
         if(requestCode == MY_REQUEST_CODE){
             IdpResponse response = IdpResponse.fromResultIntent(data);
             if(resultCode == RESULT_OK){
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                assert user != null;
-                Toast.makeText(this, "Welcome back " +user.getDisplayName(), Toast.LENGTH_SHORT).show();
+                mUser = FirebaseAuth.getInstance().getCurrentUser();
+                assert mUser != null;
+                Toast.makeText(this, "Welcome back " + mUser.getDisplayName(), Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    public  void attachListener(){
+        mAuth.addAuthStateListener(mAuthStateListener);
+    }
+
+    public void detachListener(){
+        mAuth.removeAuthStateListener(mAuthStateListener);
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        detachListener();
     }
 
 
